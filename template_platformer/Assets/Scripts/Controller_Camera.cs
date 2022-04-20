@@ -15,6 +15,11 @@ public class Controller_Camera : MonoBehaviour
     void Start()
     {
         _camera = GetComponent<Camera>();
+        GestorDeAudio.instancia.PausarSonido("glory of love");
+        GestorDeAudio.instancia.PausarSonido("Everybody");
+        GestorDeAudio.instancia.PausarSonido("hearts");
+        GestorDeAudio.instancia.ReproducirSonido("BackInBlack");
+
     }
 
     void LateUpdate()
