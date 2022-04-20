@@ -19,6 +19,9 @@ public class Controller_Camera : MonoBehaviour
 
         GestorDeAudio.instancia.ReproducirSonido("BackInBlack");
         GestorDeAudio.instancia.PausarSonido("RightHere");
+        GestorDeAudio.instancia.PausarSonido("Garrix");
+        GestorDeAudio.instancia.PausarSonido("ColdHeart");
+        GestorDeAudio.instancia.PausarSonido("Clasic");
     }
 
     void LateUpdate()
@@ -30,10 +33,46 @@ public class Controller_Camera : MonoBehaviour
             Vector3 destination = transform.position + delta;
             transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
         }
-        if (Input.GetKeyDown("q"))
+        if (Input.GetKeyDown("1"))
+        {
+            GestorDeAudio.instancia.ReproducirSonido("BackInBlack");
+            GestorDeAudio.instancia.PausarSonido("RightHere");
+            GestorDeAudio.instancia.PausarSonido("Garrix");
+            GestorDeAudio.instancia.PausarSonido("Clasic");
+            GestorDeAudio.instancia.PausarSonido("ColdHeart");
+        }
+        if (Input.GetKeyDown("2"))
         {
             GestorDeAudio.instancia.PausarSonido("BackInBlack");
             GestorDeAudio.instancia.ReproducirSonido("RightHere");
+            GestorDeAudio.instancia.PausarSonido("Garrix");
+            GestorDeAudio.instancia.PausarSonido("Clasic"); 
+            GestorDeAudio.instancia.PausarSonido("ColdHeart");
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            GestorDeAudio.instancia.ReproducirSonido("Garrix");
+            GestorDeAudio.instancia.PausarSonido("RightHere");
+            GestorDeAudio.instancia.PausarSonido("BackInBlack");
+            GestorDeAudio.instancia.PausarSonido("Clasic");
+            GestorDeAudio.instancia.PausarSonido("ColdHeart");
+        }
+        if (Input.GetKeyDown("4"))
+        {
+            GestorDeAudio.instancia.PausarSonido("Garrix");
+            GestorDeAudio.instancia.PausarSonido("RightHere");
+            GestorDeAudio.instancia.PausarSonido("BackInBlack");
+            GestorDeAudio.instancia.ReproducirSonido("Clasic");
+            GestorDeAudio.instancia.PausarSonido("ColdHeart");
+        }
+
+        if (Input.GetKeyDown("5"))
+        {
+            GestorDeAudio.instancia.PausarSonido("Garrix");
+            GestorDeAudio.instancia.PausarSonido("RightHere");
+            GestorDeAudio.instancia.PausarSonido("BackInBlack");
+            GestorDeAudio.instancia.PausarSonido("Clasic");
+            GestorDeAudio.instancia.ReproducirSonido("ColdHeart");
         }
     }
    

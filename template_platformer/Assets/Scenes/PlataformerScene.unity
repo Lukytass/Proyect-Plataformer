@@ -1334,6 +1334,9 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
   - component: {fileID: 963194232}
+  - component: {fileID: 963194233}
+  - component: {fileID: 963194235}
+  - component: {fileID: 963194234}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1462,6 +1465,9 @@ MonoBehaviour:
   sonidos:
   - {fileID: 963194230}
   - {fileID: 963194232}
+  - {fileID: 963194233}
+  - {fileID: 963194235}
+  - {fileID: 963194234}
 --- !u!114 &963194232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1477,6 +1483,60 @@ MonoBehaviour:
   Nombre: RightHere
   ClipSonido: {fileID: 8300000, guid: 70ddb0d62e5a5db439b38750415478ae, type: 3}
   Volumen: 0.656
+  pitch: 1
+  repetir: 1
+  FuenteAudio: {fileID: 0}
+--- !u!114 &963194233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c52c809e6c6318459c844d218145e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nombre: Garrix
+  ClipSonido: {fileID: 8300000, guid: 832adc406ad7aa74d9ee48d5aa8cb8cf, type: 3}
+  Volumen: 0.75
+  pitch: 1
+  repetir: 1
+  FuenteAudio: {fileID: 0}
+--- !u!114 &963194234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c52c809e6c6318459c844d218145e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nombre: ColdHeart
+  ClipSonido: {fileID: 8300000, guid: 9ac81bc3292860b438959672227a204d, type: 3}
+  Volumen: 0.627
+  pitch: 1
+  repetir: 1
+  FuenteAudio: {fileID: 0}
+--- !u!114 &963194235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c52c809e6c6318459c844d218145e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Nombre: Clasic
+  ClipSonido: {fileID: 8300000, guid: 1c606e5ff2956c0448cbf16db1a331c1, type: 3}
+  Volumen: 0.75
   pitch: 1
   repetir: 1
   FuenteAudio: {fileID: 0}
