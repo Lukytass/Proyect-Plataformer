@@ -15,11 +15,10 @@ public class Controller_Camera : MonoBehaviour
     void Start()
     {
         _camera = GetComponent<Camera>();
-        GestorDeAudio.instancia.PausarSonido("glory of love");
-        GestorDeAudio.instancia.PausarSonido("Everybody");
-        GestorDeAudio.instancia.PausarSonido("hearts");
-        GestorDeAudio.instancia.ReproducirSonido("BackInBlack");
 
+
+        GestorDeAudio.instancia.ReproducirSonido("BackInBlack");
+        GestorDeAudio.instancia.PausarSonido("RightHere");
     }
 
     void LateUpdate()
@@ -31,5 +30,11 @@ public class Controller_Camera : MonoBehaviour
             Vector3 destination = transform.position + delta;
             transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
         }
+        if (Input.GetKeyDown("q"))
+        {
+            GestorDeAudio.instancia.PausarSonido("BackInBlack");
+            GestorDeAudio.instancia.ReproducirSonido("RightHere");
+        }
     }
+   
 }
