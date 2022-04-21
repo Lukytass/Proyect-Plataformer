@@ -49,31 +49,29 @@ public class GameManager : MonoBehaviour
 
     private void GetInput()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            if (actualPlayer <= 0)
-            {
-                actualPlayer = 6;
-                SetConstraits();
-            }
-            else
-            {
-                actualPlayer--;
-                SetConstraits();
-            }
+        if (Input.GetKeyDown("1")) {
+            actualPlayer = 0;
+            SetConstraits();
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown("2"))
         {
-            if (actualPlayer >= 6)
-            {
-                actualPlayer = 0;
-                SetConstraits();
-            }
-            else
-            {
-                actualPlayer++;
-                SetConstraits();
-            }
+            actualPlayer = 1;
+            SetConstraits();
+        }
+        if (Input.GetKeyDown("3"))
+        {
+            actualPlayer = 2;
+            SetConstraits();
+        }
+        if (Input.GetKeyDown("4"))
+        {
+            actualPlayer = 3;
+            SetConstraits();
+        }
+        if (Input.GetKeyDown("5"))
+        {
+            actualPlayer = 4;
+            SetConstraits();
         }
     }
 
